@@ -1,3 +1,85 @@
 <resources>
     <string name="app_name">MP</string>
+
+    <string name = "start"> start</string>
+    <string name = "highscore">high scores</string>
+    <string name = "settings">settings</string>
+    <string name = "nightmode">night mode</string>
+    <string name ="score">score</string>
+
+    <string name = "lives">lives</string>
+
+    <string name = "lvl1">1.</string>
+    <string name = "lvl2">2.</string>
+    <string name = "lvl3">3.</string>
+    <string name = "lvl4">4.</string>
+    <string name = "lvl5">5.</string>
+    <string name = "lvl6">6.</string>
+    <string name = "lvl7">7.</string>
+    <string name = "lvl8">8.</string>
+    <string name = "lvl9">9.</string>
+    <string name = "lvl10">10.</string>
+    <string name = "lvl11">11.</string> /*don't add this number*/
+    <string name = "lvl12">12.</string>
+    <string name = "lvl13">13.</string>
+    <string name = "lvl14">14.</string>
+    <string name = "lvl15">15.</string>
+
+    <string name = "q1">Click the smallest circle</string>
+    <string name = "q1_dot">.</string>
+
+    <string name = "q2">Find the head.</string>
+
+    <string name = "q3">next</string>
+
+    <string name = "q4">What is the 8th letter of the alphabet?</string>
+    <string name = "q4_a1">p</string>
+    <string name = "q4_a2">h</string>
+    <string name = "q4_a3_correct">b</string>
+    <string name = "q4_a4">n</string>
+
+    <string name = "q5">Do the opposite of the first question.</string>
+
+    <string name = "q6"></string>
+
+    <string name = "q7">Find the square.</string>
+
+    <string name = "q8">win!!!</string>
+
+    <string name = "q9_0">click</string>
+    <string name = "q9_1">bunny.</string>
+
+    <string name = "q10">beep beep</string>
+    <string name = "q10_a1">boop bop</string>
+    <string name = "q10_a2">i am a car</string>
+    <string name = "q10_a3">meow meow</string>
+    <string name = "q10_a4_correct">sheep</string>
+
+    <string name = "q11">What number is this?</string>
+    <string name ="q11_a1">5</string>
+    <string name = "q11_a2">7</string>
+    <string name = "q11_a3">12</string>
+    <string name = "q11_a4_correct">11</string>
+
+    <string name = "q12">Your answer is incorrect</string>
+    <string name = "q12_a1_correct">incorrect</string>
+    <string name = "q12_a2">wrong</string>
+    <string name = "q12_a3">answer</string>
+    <string name = "q12_a4">oof</string>
+
+    <string name = "q13">shallots^2</string>
+    <string name = "q13_a1">correct</string>
+    <string name = "q13_a2_correct">onions</string>
+    <string name = "q13_a3">yes</string>
+    <string name = "q13_a4">leek</string>
+
+    <string name = "q14">Catch ball.</string>
+
+    <string name = "q15">Where does the general keep his armies?</string>
+    <string name = "q15_a1_correct">up his sleevies</string>
+    <string name = "q15_a2">barracks</string>
+    <string name = "q15_a3">headquarters</string>
+    <string name = "q15_a4">it is top secret information</string>
+
+
 </resources>
