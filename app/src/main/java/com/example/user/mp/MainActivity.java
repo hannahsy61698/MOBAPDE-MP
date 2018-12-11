@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
+// this is to exit the application
         if( getIntent().getBooleanExtra("Exit me", false)){
             finish();
             return; // add this to prevent from doing unnecessary stuffs
