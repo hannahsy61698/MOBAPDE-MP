@@ -21,6 +21,10 @@
             android:screenOrientation="landscape"
 
             ></activity>
+        <activity android:name=".Game2"
+            android:screenOrientation="landscape"
+
+            ></activity>
     </application>
 
 </manifest>

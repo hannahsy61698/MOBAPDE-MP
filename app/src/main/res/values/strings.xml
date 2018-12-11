@@ -40,7 +40,8 @@
 
     <string name = "q5">Do the opposite of the first question.</string>
 
-    <string name = "q6"></string>
+    <string name = "q6">Find the item</string>
+    <string name = "q6_a1">item</string>
 
     <string name = "q7">Find the square.</string>
 

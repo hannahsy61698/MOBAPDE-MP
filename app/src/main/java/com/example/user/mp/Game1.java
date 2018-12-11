@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.View;
 import android.widget.Toast;
 
 public class Game1 extends Activity {
@@ -12,6 +13,11 @@ public class Game1 extends Activity {
         setContentView(R.layout.game1);
 
 
+    }
+
+    public void next(View view){
+        Intent myIntent = new Intent(view.getContext(), Game2.class);
+        startActivityForResult(myIntent, 0);
     }
 
 //copy start here to exit
