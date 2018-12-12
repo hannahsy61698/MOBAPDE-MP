@@ -22,7 +22,7 @@ public class Game1 extends Activity {
 
     public void next(View view){
         Intent myIntent = new Intent(view.getContext(), Game2.class);
-        myIntent.putExtra("lives", 2);
+        myIntent.putExtra("lives", lives);
         startActivityForResult(myIntent, 0);
     }
 
