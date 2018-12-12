@@ -25,7 +25,7 @@
         android:layout_height="45dp"
         android:layout_marginStart="74dp"
         android:layout_marginEnd="75dp"
-        android:layout_marginBottom="14dp"
+        android:layout_marginBottom="32dp"
         android:background="@drawable/button2"
         android:fontFamily="@font/action_man_extended_bold"
         android:text="@string/start"
@@ -52,12 +52,12 @@
 
     <TextView
         android:id="@+id/textView11"
-        android:layout_width="247dp"
+        android:layout_width="282dp"
         android:layout_height="33dp"
         android:layout_marginStart="83dp"
         android:layout_marginEnd="81dp"
-        android:layout_marginBottom="16dp"
-        android:text="By: Hannah Sy and Angelica Limkico"
+        android:fontFamily="@font/gooddp"
+        android:text="@string/credits"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -70,10 +70,11 @@
         android:layout_marginTop="22dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="41dp"
-        android:text="Welcome back,"
+        android:text="@string/welcome"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/txtStart"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 

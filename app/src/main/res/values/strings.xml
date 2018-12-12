@@ -6,6 +6,8 @@
     <string name = "settings">settings</string>
     <string name = "nightmode">night mode</string>
     <string name ="score">score</string>
+    <string name = "welcome">Welcome back,</string>
+    <string name = "credits"> By Limkico, Angelica &amp; Sy, Hannah</string>
 
     <string name = "lives">lives</string>
 
