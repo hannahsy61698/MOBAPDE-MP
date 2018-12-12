@@ -5,35 +5,20 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.Toast;
 
-public class Game2 extends Activity {
+public class Game4 extends Activity {
+
+
+    private ImageView img3;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.game2);
+        setContentView(R.layout.game4);
 
-        LinearLayout linearLayout = findViewById(R.id.mainlayout);
-        ImageView img1 = new ImageView(this);
-        img1.setImageResource(R.drawable.squid_0);
-        linearLayout.addView(img1);
-        ImageView img2 = new ImageView(this);
-        img2.setImageResource(R.drawable.squid_1);
-        linearLayout.addView(img2);
 
-for (int i =0 ;i<50;i++)
-        {
-            ImageView img = new ImageView(this);
-            img.setImageResource(R.drawable.squid_2);
-            linearLayout.addView(img);
-        }
-
-        ImageView img3 = new ImageView(this);
-        img3.setImageResource(R.drawable.squid_3);
-        img3.setClickable(true);
+        img3 = findViewById(R.id.correct_btn);
         img3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -41,12 +26,13 @@ for (int i =0 ;i<50;i++)
                 startActivityForResult(myIntent, 0);
             }
         });
-        linearLayout.addView(img3);
-
-
+    }
+    public void next(View view){
+        Intent myIntent = new Intent(view.getContext(), Game5.class);
+        startActivityForResult(myIntent, 0);
     }
 
-
+    //copy start here to exit
     boolean doubleBackToExitPressedOnce = false;
     @Override
     public void onBackPressed() {
