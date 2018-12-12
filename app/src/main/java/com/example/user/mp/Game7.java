@@ -21,7 +21,7 @@ public class Game7 extends Activity {
         img.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(view.getContext(), Game9.class);
+                Intent myIntent = new Intent(view.getContext(), Game8.class);
                 startActivityForResult(myIntent, 0);
             }
         });
