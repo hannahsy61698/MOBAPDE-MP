@@ -12,9 +12,12 @@ public class Game11 extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.game11);
 
+        String lives;
+
     }
 
     boolean doubleBackToExitPressedOnce = false;
+
     @Override
     public void onBackPressed() {
         if (doubleBackToExitPressedOnce) {
@@ -33,7 +36,7 @@ public class Game11 extends Activity {
 
             @Override
             public void run() {
-                doubleBackToExitPressedOnce=false;
+                doubleBackToExitPressedOnce = false;
             }
         }, 2000);
     }

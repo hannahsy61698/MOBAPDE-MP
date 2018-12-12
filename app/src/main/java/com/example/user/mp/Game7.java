@@ -6,10 +6,12 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class Game7 extends Activity {
 
+    private String lives;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +26,9 @@ public class Game7 extends Activity {
             }
         });
 
+        lives = getIntent().getStringExtra("lives");
+        TextView life = findViewById(R.id.life_num);
+        life.setText(lives);
     }
 
 

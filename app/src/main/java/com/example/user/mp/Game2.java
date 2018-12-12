@@ -13,12 +13,15 @@ import android.widget.Toast;
 
 public class Game2 extends Activity {
 
+    private String lives;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.game2);
 
-//        TextView life = findViewById(R.id.life_num);
-//        life.setText(getIntent().getStringExtra("lives"));
+        lives = getIntent().getStringExtra("lives");
+        TextView life = findViewById(R.id.life_num);
+        life.setText(lives);
 
         LinearLayout linearLayout = findViewById(R.id.mainlayout);
         ImageView img1 = new ImageView(this);
@@ -42,6 +45,7 @@ for (int i =0 ;i<50;i++)
             @Override
             public void onClick(View view) {
                 Intent myIntent = new Intent(view.getContext(), Game4.class);
+                myIntent.putExtra("lives", lives);
                 startActivityForResult(myIntent, 0);
             }
         });
