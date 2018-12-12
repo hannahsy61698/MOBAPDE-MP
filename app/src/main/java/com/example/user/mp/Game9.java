@@ -21,7 +21,7 @@ public class Game9 extends Activity {
         life.setText(lives);
     }
 
-    public void next(View view){
+    public void nextto10(View view){
         Intent myIntent = new Intent(view.getContext(), Game10.class);
         myIntent.putExtra("lives", lives);
         startActivityForResult(myIntent, 0);

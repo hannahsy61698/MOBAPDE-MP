@@ -105,7 +105,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView10"
         app:layout_constraintTop_toBottomOf="@+id/q1_click"
-        app:srcCompat="@drawable/circle" />
+       android:src="@drawable/circle" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -119,5 +119,5 @@
         app:layout_constraintEnd_toStartOf="@+id/imageView9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:srcCompat="@drawable/circle" />
+       android:src="@drawable/circle" />
 </android.support.constraint.ConstraintLayout>
