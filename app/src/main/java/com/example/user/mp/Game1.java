@@ -13,6 +13,8 @@ import org.w3c.dom.Text;
 public class Game1 extends Activity {
     private String lives;
     private TextView life;
+    private int highscore;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.game1);
@@ -34,6 +36,7 @@ public class Game1 extends Activity {
         if(minus != 0) {
             lives = Integer.toString(minus);
             life.setText(lives);
+            highscore = 10;
         }else
         {
             Intent myIntent = new Intent(view.getContext(), GameOver.class);
