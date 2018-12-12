@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class Game2 extends Activity {
@@ -15,6 +16,9 @@ public class Game2 extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.game2);
+
+//        TextView life = findViewById(R.id.life_num);
+//        life.setText(getIntent().getStringExtra("lives"));
 
         LinearLayout linearLayout = findViewById(R.id.mainlayout);
         ImageView img1 = new ImageView(this);
