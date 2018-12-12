@@ -11,7 +11,6 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     private Button butt;
-    boolean doubleBackToExitPressedOnce = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,10 +33,7 @@ public class MainActivity extends AppCompatActivity {
             return; // add this to prevent from doing unnecessary stuffs
         }
     }
-
-    public void database(){
-
-    }
+    boolean doubleBackToExitPressedOnce = false;
 
     @Override
     public void onBackPressed() {

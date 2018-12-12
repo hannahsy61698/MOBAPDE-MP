@@ -25,6 +25,18 @@
             android:screenOrientation="landscape"
 
             ></activity>
+        <activity android:name=".Game3"
+            android:screenOrientation="landscape"
+
+            ></activity>
+        <activity android:name=".Game4"
+            android:screenOrientation="landscape"
+
+            ></activity>
+        <activity android:name=".Game5"
+            android:screenOrientation="landscape"
+
+            ></activity>
     </application>
 
 </manifest>
