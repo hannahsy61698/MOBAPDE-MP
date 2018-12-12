@@ -9,15 +9,11 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 public class Game4 extends Activity {
-
-
-    private ImageView img3;
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.game4);
 
-
+        ImageView img3 = new ImageView(this);
         img3 = findViewById(R.id.correct_btn);
         img3.setOnClickListener(new View.OnClickListener() {
             @Override
