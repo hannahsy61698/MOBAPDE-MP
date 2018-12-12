@@ -16,7 +16,7 @@ public class Game4 extends Activity {
 
     }
     public void next(View view){
-        Intent myIntent = new Intent(view.getContext(), Game9.class);
+        Intent myIntent = new Intent(view.getContext(), Game5.class);
         startActivityForResult(myIntent, 0);
     }
 

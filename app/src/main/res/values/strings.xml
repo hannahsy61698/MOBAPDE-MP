@@ -52,11 +52,11 @@
     <string name = "q9_0">click</string>
     <string name = "q9_1">bunny.</string>
 
-    <string name = "q10">beep beep</string>
+
     <string name = "q10_a1">boop bop</string>
     <string name = "q10_a2">i am a car</string>
-    <string name = "q10_a3">meow meow</string>
-    <string name = "q10_a4_correct">sheep</string>
+    <string name = "q10_a3">sheep</string>
+    <string name = "q10_a4_correct">beep beep</string>
 
     <string name = "q11">What number is this?</string>
     <string name ="q11_a1">5</string>
