@@ -45,8 +45,8 @@ public class Game3_0 extends Activity {
             public void onClick(View view) {
                 views = view;
                 String txt = text.getText().toString();
-
-                if(txt.equals("stitch") || txt.equals("STITCH") || txt.equals("Stitch")) {
+//if(txt.equals("stitch") || txt.equals("STITCH") || txt.equals("Stitch"))
+                if(txt.toLowerCase().equals("stitch")) {
                     highscore = 30;
                     Intent myIntent = new Intent(view.getContext(), Game4.class);
                     myIntent.putExtra("lives", lives);

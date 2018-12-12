@@ -24,7 +24,6 @@ public class Game9 extends Activity {
     }
 
     public void nextto10(View view){
-        Toast.makeText(this, "Press back button when you found the character!", Toast.LENGTH_LONG).show();
         Intent myIntent = new Intent(view.getContext(), Game10.class);
         myIntent.putExtra("lives", lives);
         startActivityForResult(myIntent, 0);
