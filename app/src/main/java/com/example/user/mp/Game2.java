@@ -37,7 +37,7 @@ for (int i =0 ;i<50;i++)
         img3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(view.getContext(), Game3.class);
+                Intent myIntent = new Intent(view.getContext(), Game4.class);
                 startActivityForResult(myIntent, 0);
             }
         });

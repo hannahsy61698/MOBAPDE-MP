@@ -13,15 +13,7 @@ public class Game4 extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.game4);
 
-        ImageView img3 = new ImageView(this);
-        img3 = findViewById(R.id.correct_btn);
-        img3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent myIntent = new Intent(view.getContext(), Game3.class);
-                startActivityForResult(myIntent, 0);
-            }
-        });
+
     }
     public void next(View view){
         Intent myIntent = new Intent(view.getContext(), Game5.class);
