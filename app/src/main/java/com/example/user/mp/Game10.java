@@ -31,6 +31,20 @@ public class Game10 extends Activity {
         startActivityForResult(myIntent, 0);
     }
 
+    public void wrong10(View view){
+        int minus = Integer.parseInt(lives);
+        minus = minus - 1;
+        if(minus != 0) {
+            lives = Integer.toString(minus);
+            life.setText(lives);
+        }else
+        {
+            highscore = 90;
+            Intent myIntent = new Intent(view.getContext(), GameOver.class);
+            startActivityForResult(myIntent, 0);
+        }
+    }
+
     boolean doubleBackToExitPressedOnce = false;
     @Override
     public void onBackPressed() {

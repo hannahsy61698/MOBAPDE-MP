@@ -34,6 +34,19 @@ public class Game7 extends Activity {
         life.setText(lives);
     }
 
+    public void wrong7(View view){
+        int minus = Integer.parseInt(lives);
+        minus = minus - 1;
+        if(minus != 0) {
+            lives = Integer.toString(minus);
+            life.setText(lives);
+        }else
+        {
+            highscore = 60;
+            Intent myIntent = new Intent(view.getContext(), GameOver.class);
+            startActivityForResult(myIntent, 0);
+        }
+    }
 
 
     boolean doubleBackToExitPressedOnce = false;

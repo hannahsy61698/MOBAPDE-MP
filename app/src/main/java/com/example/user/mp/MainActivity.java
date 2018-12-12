@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         TextView next = findViewById(R.id.txtStart);
         next.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent myIntent = new Intent(view.getContext(), Game5.class);
+                Intent myIntent = new Intent(view.getContext(), Game1.class);
                 myIntent.putExtra("lives", "3");
                 startActivityForResult(myIntent, 0);
             }
