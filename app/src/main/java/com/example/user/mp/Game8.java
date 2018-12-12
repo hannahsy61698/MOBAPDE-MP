@@ -19,13 +19,15 @@ public class Game8 extends Activity {
     private Board View;
     private Engine Engine;
     private View views;
+    private TextView life;
+    private int highscore;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.game8i);
 
         lives = getIntent().getStringExtra("lives");
-        TextView life = findViewById(R.id.life_num);
+        life = findViewById(R.id.life_num);
         life.setText(lives);
 
         Button butt = findViewById(R.id.button);

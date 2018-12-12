@@ -12,6 +12,8 @@ import android.widget.Toast;
 public class Game7 extends Activity {
 
     private String lives;
+    private TextView life;
+    private int highscore;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,12 +24,13 @@ public class Game7 extends Activity {
             @Override
             public void onClick(View view) {
                 Intent myIntent = new Intent(view.getContext(), Game8.class);
+                myIntent.putExtra("lives", lives);
                 startActivityForResult(myIntent, 0);
             }
         });
 
         lives = getIntent().getStringExtra("lives");
-        TextView life = findViewById(R.id.life_num);
+        life = findViewById(R.id.life_num);
         life.setText(lives);
     }
 
