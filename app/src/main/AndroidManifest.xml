@@ -58,9 +58,13 @@
 
             ></activity>
         <activity android:name=".Game11"
-        android:screenOrientation="portrait"
+            android:screenOrientation="portrait"
 
-        ></activity>
+            ></activity>
+        <activity android:name=".Game12"
+            android:screenOrientation="portrait"
+
+            ></activity>
     </application>
 
 </manifest>

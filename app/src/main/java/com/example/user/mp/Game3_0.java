@@ -35,16 +35,21 @@ public class Game3_0 extends Activity {
         next = findViewById(R.id.submitbtn);
         text = findViewById(R.id.character);
 
-        final String txt = text.getText().toString();
 
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                String txt = text.getText().toString();
+
                 if(txt.equals("stitch") || txt.equals("STITCH") || txt.equals("Stitch")) {
                     Intent myIntent = new Intent(view.getContext(), Game4.class);
                     myIntent.putExtra("lives", lives);
                     startActivityForResult(myIntent, 0);
                 }
+
+                //else
+                //    Toast.makeText(this, "no!",Toast.LENGTH_SHORT);
 
 
             }

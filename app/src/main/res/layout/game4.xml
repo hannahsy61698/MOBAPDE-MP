@@ -75,7 +75,7 @@
         android:fontFamily="@font/action_man"
         android:text="@string/q4_a3_correct"
         android:clickable="true"
-        android:onClick="next"
+        android:onClick="nextto5"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.549"

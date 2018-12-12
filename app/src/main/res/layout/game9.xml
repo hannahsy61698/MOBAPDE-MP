@@ -45,7 +45,7 @@
         android:layout_marginBottom="8dp"
         android:clickable="true"
         android:fontFamily="@font/action_man"
-        android:onClick="next"
+        android:onClick="nextto10"
         android:text="@string/q9_1"
         android:textSize="36sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView2"
