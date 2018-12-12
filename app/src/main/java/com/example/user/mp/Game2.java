@@ -44,7 +44,7 @@ for (int i =0 ;i<50;i++)
         img3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(view.getContext(), Game4.class);
+                Intent myIntent = new Intent(view.getContext(), Game3_0.class);
                 myIntent.putExtra("lives", lives);
                 startActivityForResult(myIntent, 0);
             }
