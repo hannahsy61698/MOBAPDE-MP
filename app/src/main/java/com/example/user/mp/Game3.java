@@ -41,6 +41,7 @@ public class Game3 extends Activity {
         super.onCreate(savedInstanceState);
         Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.stitch);
 
+
         setContentView(new MyView(this, bitmap));
     }
 
@@ -54,6 +55,9 @@ public class Game3 extends Activity {
         private Path mPath;
         private Paint mBitmapPaint;
         private float mX, mY;
+
+        private Button btn;
+
 
         public MyView(Context context) {
             super(context);
