@@ -1,4 +1,6 @@
 package com.example.user.mp;
 
-public class Game5 {
+import android.app.Activity;
+
+public class Game5 extends Activity {
 }

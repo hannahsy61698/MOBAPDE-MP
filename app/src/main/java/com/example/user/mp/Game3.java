@@ -12,7 +12,8 @@ public class Game3 extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.game3);
 
-        Button temp = new Button(this);
+        Button temp;
+        temp = findViewById(R.id.btn);
         temp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
