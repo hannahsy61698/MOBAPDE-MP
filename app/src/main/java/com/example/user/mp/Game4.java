@@ -11,13 +11,15 @@ import android.widget.Toast;
 
 public class Game4 extends Activity {
     private String lives;
+    private TextView life;
+    private int highscore;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.game4);
 
         lives = getIntent().getStringExtra("lives");
-        TextView life = findViewById(R.id.life_num);
+        life = findViewById(R.id.life_num);
         life.setText(lives);
 
     }
@@ -29,6 +31,21 @@ public class Game4 extends Activity {
 
         startActivityForResult(myIntent, 0);
     }
+
+    public void wrong4(View view){
+        int minus = Integer.parseInt(lives);
+        minus = minus - 1;
+        if(minus != 0) {
+            lives = Integer.toString(minus);
+            life.setText(lives);
+        }else
+        {
+            highscore = 30;
+            Intent myIntent = new Intent(view.getContext(), GameOver.class);
+            startActivityForResult(myIntent, 0);
+        }
+    }
+
 
     //copy start here to exit
     boolean doubleBackToExitPressedOnce = false;

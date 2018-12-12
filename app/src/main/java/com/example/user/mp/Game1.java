@@ -36,9 +36,10 @@ public class Game1 extends Activity {
         if(minus != 0) {
             lives = Integer.toString(minus);
             life.setText(lives);
-            highscore = 10;
+
         }else
         {
+            highscore = 10;
             Intent myIntent = new Intent(view.getContext(), GameOver.class);
             startActivityForResult(myIntent, 0);
         }
