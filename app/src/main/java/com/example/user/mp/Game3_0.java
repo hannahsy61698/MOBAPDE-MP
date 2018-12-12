@@ -48,6 +48,9 @@ public class Game3_0 extends Activity {
                     startActivityForResult(myIntent, 0);
                 }
 
+                else
+                    Toast.makeText(this, "no!",Toast.LENGTH_SHORT);
+
 
             }
         });
