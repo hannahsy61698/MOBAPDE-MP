@@ -25,8 +25,7 @@
     <string name = "lvl14">14.</string>
     <string name = "lvl15">15.</string>
 
-    <string name = "q1">Click the smallest</string>
-    <string name = "q1_circle">circle</string>
+    <string name = "q1">Click the smallest circle</string>
     <string name = "q1_dot">.</string>
 
     <string name = "q2">Find the head.</string>
