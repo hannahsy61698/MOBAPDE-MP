@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class Game3_0 extends Activity {
 
@@ -44,6 +45,10 @@ public class Game3_0 extends Activity {
                     myIntent.putExtra("lives", lives);
                     startActivityForResult(myIntent, 0);
                 }
+
+                else
+                    Toast.makeText(this, "wrong!", Toast.LENGTH_SHORT).show());
+
             }
         });
 
