@@ -1,6 +1,7 @@
 package com.example.user.mp;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -35,11 +36,12 @@ public class Game3_0 extends Activity {
         text = findViewById(R.id.character);
 
         final String txt = text.getText().toString();
-
+        Toast.makeText(this, txt, Toast.LENGTH_LONG).show();
 
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                final String txt = text.getText().toString();
                 if(txt.equals("stitch") || txt.equals("STITCH") || txt.equals("Stitch")) {
                     Intent myIntent = new Intent(view.getContext(), Game4.class);
                     myIntent.putExtra("lives", lives);
