@@ -4,15 +4,20 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class Game11 extends Activity {
+
+    private String lives;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.game11);
 
-        String lives;
+        lives = getIntent().getStringExtra("lives");
+        TextView life = findViewById(R.id.life_num);
+        life.setText(lives);
 
     }
 
