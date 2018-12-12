@@ -50,7 +50,6 @@
       </file>
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/mp/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -59,8 +58,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
 =======
-=======
->>>>>>> parent of f91e48c... lvl4 images not showing up
 =======
 >>>>>>> parent of f91e48c... lvl4 images not showing up
       <file leaf-file-name="Game4.java" pinned="false" current-in-tab="false">
@@ -73,9 +70,6 @@
                 <element signature="e#775#1025#0" expanded="true" />
                 <element signature="e#1024#1025#0" expanded="true" />
 <<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> parent of f91e48c... lvl4 images not showing up
-=======
 >>>>>>> parent of f91e48c... lvl4 images not showing up
 =======
 >>>>>>> parent of f91e48c... lvl4 images not showing up
@@ -98,12 +92,9 @@
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
             <state relative-caret-position="68">
               <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
 =======
-=======
->>>>>>> parent of f91e48c... lvl4 images not showing up
 =======
 >>>>>>> parent of f91e48c... lvl4 images not showing up
             <state relative-caret-position="166">
@@ -121,12 +112,9 @@
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
             <state relative-caret-position="68">
               <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
 =======
-=======
->>>>>>> parent of f91e48c... lvl4 images not showing up
 =======
 >>>>>>> parent of f91e48c... lvl4 images not showing up
             <state relative-caret-position="204">
@@ -146,13 +134,8 @@
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
             <state relative-caret-position="204">
               <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-=======
-            <state relative-caret-position="34">
-              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
->>>>>>> parent of f91e48c... lvl4 images not showing up
 =======
             <state relative-caret-position="34">
               <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
@@ -193,14 +176,11 @@
       </file>
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
       <file leaf-file-name="game5.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/game5.xml">
           <provider selected="true" editor-type-id="android-designer2">
             <state />
 =======
-=======
->>>>>>> parent of f91e48c... lvl4 images not showing up
 =======
 >>>>>>> parent of f91e48c... lvl4 images not showing up
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="true">
@@ -2506,11 +2486,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/user/mp/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-=======
->>>>>>> parent of f91e48c... lvl4 images not showing up
 =======
 >>>>>>> parent of f91e48c... lvl4 images not showing up
         <option value="$PROJECT_DIR$/app/src/main/res/layout/game3.xml" />
@@ -2522,9 +2499,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/user/mp/Game4.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
 <<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> parent of f91e48c... lvl4 images not showing up
-=======
 >>>>>>> parent of f91e48c... lvl4 images not showing up
 =======
 >>>>>>> parent of f91e48c... lvl4 images not showing up
@@ -2976,14 +2950,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/game3.xml">
-      <provider editor-type-id="text-editor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/Game2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -3034,35 +3000,22 @@
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/mp/Game3.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
         <state relative-caret-position="166">
           <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
 =======
-=======
-        <state />
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
->>>>>>> parent of f91e48c... lvl4 images not showing up
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/mp/Game5.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-<<<<<<< HEAD
->>>>>>> parent of f91e48c... lvl4 images not showing up
-=======
 >>>>>>> parent of f91e48c... lvl4 images not showing up
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/mp/Game3.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
 <<<<<<< HEAD
         <state relative-caret-position="204">
           <caret line="42" column="11" selection-start-line="36" selection-start-column="8" selection-end-line="42" selection-end-column="11" />
@@ -3077,17 +3030,10 @@
           <folding>
             <element signature="imports" expanded="true" />
 >>>>>>> parent of f91e48c... lvl4 images not showing up
-=======
-        <state relative-caret-position="166">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
->>>>>>> parent of f91e48c... lvl4 images not showing up
           </folding>
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -3117,8 +3063,6 @@
             <element signature="e#775#1025#0" expanded="true" />
             <element signature="e#1024#1025#0" expanded="true" />
 =======
-=======
->>>>>>> parent of f91e48c... lvl4 images not showing up
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/user/mp/Game2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -3127,9 +3071,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1163#1413#0" expanded="true" />
             <element signature="e#1412#1413#0" expanded="true" />
-<<<<<<< HEAD
->>>>>>> parent of f91e48c... lvl4 images not showing up
-=======
 >>>>>>> parent of f91e48c... lvl4 images not showing up
           </folding>
         </state>
@@ -3170,9 +3111,6 @@
         <state />
       </provider>
     </entry>
-<<<<<<< HEAD
->>>>>>> parent of f91e48c... lvl4 images not showing up
-=======
 >>>>>>> parent of f91e48c... lvl4 images not showing up
   </component>
 </project>
