@@ -23,6 +23,7 @@ public class Game10 extends Activity {
     }
 
     public void nextto11(View view){
+
         Intent myIntent = new Intent(view.getContext(), Game11.class);
         myIntent.putExtra("lives", lives);
         startActivityForResult(myIntent, 0);
