@@ -40,7 +40,11 @@
         <activity android:name=".Game7"
         android:screenOrientation="portrait"
 
-        ></activity>
+            ></activity>
+        <activity android:name=".Game8"
+            android:screenOrientation="portrait"
+
+            ></activity>
         <activity android:name=".Game9"
             android:screenOrientation="portrait"
 
