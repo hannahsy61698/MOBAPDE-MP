@@ -8,6 +8,7 @@
     <string name ="score">score</string>
     <string name = "welcome">Welcome back,</string>
     <string name = "credits"> By Limkico, Angelica &amp; Sy, Hannah</string>
+    <string name = "submit">submit</string>
 
     <string name = "lives">lives</string>
 
@@ -32,7 +33,8 @@
 
     <string name = "q2">Find the head.</string>
 
-    <string name = "q3">next</string>
+    <string name = "q3">click me!</string>
+    <string name = "q3_0">Who is it?</string>
 
     <string name = "q4">What is the 8th letter of the alphabet?</string>
     <string name = "q4_a1">p</string>
@@ -52,11 +54,11 @@
     <string name = "q9_0">click</string>
     <string name = "q9_1">bunny.</string>
 
-    <string name = "q10">beep beep</string>
+
     <string name = "q10_a1">boop bop</string>
     <string name = "q10_a2">i am a car</string>
-    <string name = "q10_a3">meow meow</string>
-    <string name = "q10_a4_correct">sheep</string>
+    <string name = "q10_a3">sheep</string>
+    <string name = "q10_a4_correct">beep beep</string>
 
     <string name = "q11">What number is this?</string>
     <string name ="q11_a1">5</string>

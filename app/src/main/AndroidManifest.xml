@@ -25,6 +25,10 @@
             android:screenOrientation="portrait"
 
             ></activity>
+        <activity android:name=".Game3_0"
+            android:screenOrientation="portrait"
+
+            ></activity>
         <activity android:name=".Game3"
             android:screenOrientation="portrait"
 
@@ -53,6 +57,10 @@
             android:screenOrientation="portrait"
 
             ></activity>
+        <activity android:name=".Game11"
+        android:screenOrientation="portrait"
+
+        ></activity>
     </application>
 
 </manifest>
