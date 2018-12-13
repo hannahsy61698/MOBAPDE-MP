@@ -24,6 +24,14 @@ public class Game11 extends Activity {
 
     }
 
+    public void nextto12(View view){
+
+        Intent myIntent = new Intent(view.getContext(), Game12.class);
+
+        myIntent.putExtra("lives", lives);
+
+        startActivityForResult(myIntent, 0);
+    }
     public void wrong11(View view){
         int minus = Integer.parseInt(lives);
         minus = minus - 1;
