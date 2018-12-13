@@ -32,20 +32,7 @@ public class Game13 extends Activity {
         startActivityForResult(myIntent, 0);
     }
 
-    public void wrong13(View view){
-        int minus = Integer.parseInt(lives);
-        minus = minus - 1;
-        if(minus != 0) {
-            lives = Integer.toString(minus);
-            life.setText(lives);
-        }else
-        {
-            highscore = 120;
-            Intent myIntent = new Intent(view.getContext(), GameOver.class);
-            myIntent.putExtra("score", "120");
-            startActivityForResult(myIntent, 0);
-        }
-    }
+
 
     boolean doubleBackToExitPressedOnce = false;
     @Override

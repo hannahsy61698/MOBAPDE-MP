@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -25,6 +26,28 @@ public class Game6_cat extends Activity {
         life = findViewById(R.id.life_num);
         life.setText(lives);
         */
+
+        ImageView img3 = new ImageView(this);
+        img3.setImageResource(R.drawable.cat);
+        img3.setClickable(true);
+        img3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int minus = Integer.parseInt(lives);
+                minus = minus - 1;
+                if(minus != 0) {
+                    lives = Integer.toString(minus);
+                    life.setText(lives);
+                }else
+                {
+                    highscore = 50;
+                    Intent myIntent = new Intent(view.getContext(), GameOver.class);
+                    myIntent.putExtra("score", "120");
+                    startActivityForResult(myIntent, 0);
+                }
+            }
+        });
+
 
     }
     public boolean onTouchEvent(MotionEvent touchevent){
@@ -58,20 +81,6 @@ public class Game6_cat extends Activity {
         return false;
     }
 
-    public void wrong6(View view){
-        int minus = Integer.parseInt(lives);
-        minus = minus - 1;
-        if(minus != 0) {
-            lives = Integer.toString(minus);
-            life.setText(lives);
-        }else
-        {
-            highscore = 50;
-            Intent myIntent = new Intent(view.getContext(), GameOver.class);
-            myIntent.putExtra("score", "120");
-            startActivityForResult(myIntent, 0);
-        }
-    }
 
 
     boolean doubleBackToExitPressedOnce = false;

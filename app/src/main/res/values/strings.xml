@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MP</string>
+    <string name="app_name">The possibly Impossible Quiz</string>
 
     <string name = "start">    start</string>
     <string name = "highscore">high scores</string>
