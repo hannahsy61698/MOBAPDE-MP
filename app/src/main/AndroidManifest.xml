@@ -49,6 +49,19 @@
             android:screenOrientation="portrait"
 
             ></activity>
+        <activity android:name=".Game6_Pikachu"
+            android:screenOrientation="portrait"
+
+            ></activity>
+        <activity android:name=".Game6_key"
+            android:screenOrientation="portrait"
+
+            ></activity>
+        <activity android:name=".Game6_cat"
+            android:screenOrientation="portrait"
+
+            ></activity>
+
         <activity android:name=".Game7"
             android:screenOrientation="portrait"
 
