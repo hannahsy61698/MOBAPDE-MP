@@ -20,6 +20,7 @@ public class Game6_Pikachu extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.game6_pikachu);
 
+        lives = getIntent().getStringExtra("lives");
        /*
         lives = getIntent().getStringExtra("lives");
         life = findViewById(R.id.life_num);
@@ -38,19 +39,23 @@ public class Game6_Pikachu extends Activity {
                 y2=touchevent.getY();
                 if(x1<x2){ //left
                     Intent myIntent =new Intent(Game6_Pikachu.this,Game6.class);
+                    myIntent.putExtra("lives", lives);
                     startActivityForResult(myIntent, 0); //dont change
                 }
                 else if (x2>x1) //right
                 {
                     Intent myIntent =new Intent(Game6_Pikachu.this,Game6_cat.class);
+                    myIntent.putExtra("lives", lives);
                     startActivityForResult(myIntent, 0);
                 }
                 else if (y1<y2){
                     Intent myIntent =new Intent(Game6_Pikachu.this,Game6_theItem.class);
+                    myIntent.putExtra("lives", lives);
                     startActivityForResult(myIntent, 0);
                 }
                 else if (y2<y1){
                     Intent myIntent =new Intent(Game6_Pikachu.this,Game6_key.class);
+                    myIntent.putExtra("lives", lives);
                     startActivityForResult(myIntent, 0);
                 }
 
@@ -58,12 +63,12 @@ public class Game6_Pikachu extends Activity {
         return false;
     }
 
-    public void wrong6(View view){
+    public void wrong6p(View view){
         int minus = Integer.parseInt(lives);
         minus = minus - 1;
         if(minus != 0) {
             lives = Integer.toString(minus);
-            life.setText(lives);
+          //  life.setText(lives);
         }else
         {
             highscore = 50;

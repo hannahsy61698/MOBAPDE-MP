@@ -20,6 +20,7 @@ public class Game6_theItem extends Activity {
         super.onCreate(savedInstanceState);
           setContentView(R.layout.game6_theitem);
 
+        lives = getIntent().getStringExtra("lives");
        /*
         lives = getIntent().getStringExtra("lives");
         life = findViewById(R.id.life_num);
@@ -38,19 +39,23 @@ public class Game6_theItem extends Activity {
                 y2=touchevent.getY();
                 if(x1<x2){ //left
                     Intent myIntent =new Intent(Game6_theItem.this,Game6_cat.class);
+                    myIntent.putExtra("lives", lives);
                     startActivityForResult(myIntent, 0);
                 }
                 else if (x2>x1) //right
                 {
                     Intent myIntent =new Intent(Game6_theItem.this,Game6_Pikachu.class);
+                    myIntent.putExtra("lives", lives);
                     startActivityForResult(myIntent, 0);
                 }
                 else if (y1<y2){
                     Intent myIntent =new Intent(Game6_theItem.this,Game6_key.class);
+                    myIntent.putExtra("lives", lives);
                     startActivityForResult(myIntent, 0);
                 }
                 else if (y2<y1){
                     Intent myIntent =new Intent(Game6_theItem.this,Game6.class);
+                    myIntent.putExtra("lives", lives);
                     startActivityForResult(myIntent, 0); //dont change
                 }
 
