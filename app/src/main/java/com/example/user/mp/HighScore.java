@@ -24,6 +24,14 @@ public class HighScore extends Activity {
             String num1 = getIntent().getStringExtra("highname");
             String score1 = getIntent().getStringExtra("score");
             high1.setText(num1 + ":   " + score1);
+
+            String num2 = getIntent().getStringExtra("highname2");
+            String score2 = getIntent().getStringExtra("score");
+            high2.setText(num2 + ":   " + score2);
+
+            String num3 = getIntent().getStringExtra("highname3");
+            String score3 = getIntent().getStringExtra("score");
+            high3.setText(num3 + ":   " + score3);
         }
 
         TextView back = findViewById(R.id.txtback);

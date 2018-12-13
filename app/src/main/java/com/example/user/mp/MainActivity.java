@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         TextView next = findViewById(R.id.txtStart);
         next.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                Intent myIntent = new Intent(view.getContext(), Game1.class);
+                Intent myIntent = new Intent(view.getContext(), Game9.class);
                 myIntent.putExtra("lives", "3");
                 startActivityForResult(myIntent, 0);
             }
@@ -51,9 +51,14 @@ public class MainActivity extends AppCompatActivity {
                     startActivityForResult(myIntent, 0);
                 }else{
                     String msg = players.get(0).getName();
+                    String msg2 = players.get(1).getName();
+                    String msg3 = players.get(2).getName();
+                    String highscorez = Integer.toString(players.size());
                     Intent myIntent = new Intent(view.getContext(), HighScore.class);
                     myIntent.putExtra("highname", msg);
-                    myIntent.putExtra("score", highscore);
+                    myIntent.putExtra("score", highscorez);
+                    myIntent.putExtra("highname2", msg2);
+                    myIntent.putExtra("highname3", msg3);
                     startActivityForResult(myIntent, 0);
                 }
             }
@@ -74,7 +79,13 @@ public class MainActivity extends AppCompatActivity {
         }
         int temp = Integer.parseInt(high);
         Player player1 = new Player(1, "Lebron James", "F", temp);
+        Player player2 = new Player(2, "Fukuradani", "W", temp);
+        Player player3 = new Player(3, "King", "D", temp);
+
         db.addPlayer(player1);
+        db.addPlayer(player2);
+        db.addPlayer(player3);
+
         players = db.allPlayers();
     }
 
