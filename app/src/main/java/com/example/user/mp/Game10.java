@@ -12,20 +12,37 @@ import android.widget.TextView;
 public class Game10 extends Activity {
 
     private String lives;
+    private TextView life;
+    private int highscore;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.game10);
 
         lives = getIntent().getStringExtra("lives");
-        TextView life = findViewById(R.id.life_num);
+        life = findViewById(R.id.life_num);
         life.setText(lives);
     }
 
     public void nextto11(View view){
+
         Intent myIntent = new Intent(view.getContext(), Game11.class);
         myIntent.putExtra("lives", lives);
         startActivityForResult(myIntent, 0);
+    }
+
+    public void wrong10(View view){
+        int minus = Integer.parseInt(lives);
+        minus = minus - 1;
+        if(minus != 0) {
+            lives = Integer.toString(minus);
+            life.setText(lives);
+        }else
+        {
+            highscore = 90;
+            Intent myIntent = new Intent(view.getContext(), GameOver.class);
+            startActivityForResult(myIntent, 0);
+        }
     }
 
     boolean doubleBackToExitPressedOnce = false;

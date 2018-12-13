@@ -19,13 +19,15 @@ public class Game8 extends Activity {
     private Board View;
     private Engine Engine;
     private View views;
+    private TextView life;
+    private int highscore;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.game8i);
 
         lives = getIntent().getStringExtra("lives");
-        TextView life = findViewById(R.id.life_num);
+        life = findViewById(R.id.life_num);
         life.setText(lives);
 
         Button butt = findViewById(R.id.button);
@@ -52,10 +54,25 @@ public class Game8 extends Activity {
         View.setMainActivity(this);
     }
 
+    public void wrong8(){
+        int minus = Integer.parseInt(lives);
+        minus = minus - 1;
+        if(minus != 0) {
+            lives = Integer.toString(minus);
+            life.setText(lives);
+        }else
+        {
+            highscore = 70;
+            Intent myIntent = new Intent(views.getContext(), GameOver.class);
+            startActivityForResult(myIntent, 0);
+        }
+    }
+
     public void gameEnded(char c) {
 
         if(c == 'T'){
-            String msg = "New Game! No ties!";
+            String msg = "New Game! No ties! Also, you get minus life";
+            wrong8();
             new AlertDialog.Builder(this).setTitle("Tic Tac Toe")
                     .setMessage(msg)
                     .setOnDismissListener(new DialogInterface.OnDismissListener() {
@@ -67,7 +84,7 @@ public class Game8 extends Activity {
                     .show();
         }
         else if(c == 'X'){
-            String msg = "You won!";
+            String msg = "You won! Go to the next level";
             new AlertDialog.Builder(this).setTitle("Tic Tac Toe")
                     .setMessage(msg)
                     .setOnDismissListener(new DialogInterface.OnDismissListener() {
@@ -80,7 +97,8 @@ public class Game8 extends Activity {
                     })
                     .show();
         }else{
-            String msg = "You lost";
+            String msg = "You lost! Bummer... You still get a minus life";
+            wrong8();
             new AlertDialog.Builder(this).setTitle("Tic Tac Toe")
                     .setMessage(msg)
                     .setOnDismissListener(new DialogInterface.OnDismissListener() {
