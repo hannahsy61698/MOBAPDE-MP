@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class Game12  extends Activity {
+public class Game14 extends Activity {
 
     private String lives;
     private TextView life;
@@ -14,36 +14,34 @@ public class Game12  extends Activity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.game12);
+        setContentView(R.layout.game14);
 
         lives = getIntent().getStringExtra("lives");
         life = findViewById(R.id.life_num);
         life.setText(lives);
 
     }
-    public void nextto13(View view){
 
-        Intent myIntent = new Intent(view.getContext(), Game13.class);
+    public void nextto15(View view) {
+
+        Intent myIntent = new Intent(view.getContext(), Game15.class);
 
         myIntent.putExtra("lives", lives);
 
         startActivityForResult(myIntent, 0);
     }
 
-    public void wrong12(View view){
+    public void wrong14(View view) {
         int minus = Integer.parseInt(lives);
         minus = minus - 1;
-        if(minus != 0) {
+        if (minus != 0) {
             lives = Integer.toString(minus);
             life.setText(lives);
-        }else
-        {
-            highscore = 110;
+        } else {
+            highscore = 130;
             Intent myIntent = new Intent(view.getContext(), GameOver.class);
             startActivityForResult(myIntent, 0);
         }
     }
-
-
-
 }
+

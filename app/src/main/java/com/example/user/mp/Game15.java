@@ -6,44 +6,42 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class Game12  extends Activity {
+public class Game15 extends Activity
 
-    private String lives;
-    private TextView life;
-    private int highscore;
+    {
 
-    protected void onCreate(Bundle savedInstanceState) {
+        private String lives;
+        private TextView life;
+        private int highscore;
+
+        protected void onCreate (Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.game12);
+        setContentView(R.layout.game15);
 
         lives = getIntent().getStringExtra("lives");
         life = findViewById(R.id.life_num);
         life.setText(lives);
 
     }
-    public void nextto13(View view){
+        public void endGame (View view){
 
-        Intent myIntent = new Intent(view.getContext(), Game13.class);
+        Intent myIntent = new Intent(view.getContext(), Game14.class);
 
         myIntent.putExtra("lives", lives);
 
         startActivityForResult(myIntent, 0);
     }
 
-    public void wrong12(View view){
+        public void wrong15 (View view){
         int minus = Integer.parseInt(lives);
         minus = minus - 1;
-        if(minus != 0) {
+        if (minus != 0) {
             lives = Integer.toString(minus);
             life.setText(lives);
-        }else
-        {
-            highscore = 110;
+        } else {
+            highscore = 140;
             Intent myIntent = new Intent(view.getContext(), GameOver.class);
             startActivityForResult(myIntent, 0);
         }
     }
-
-
-
-}
+    }

@@ -65,9 +65,21 @@
             android:screenOrientation="portrait"
 
             ></activity>
-        <activity android:name=".GameOver"
+        <activity android:name=".Game13"
             android:screenOrientation="portrait"
 
+            ></activity>
+        <activity android:name=".Game14"
+            android:screenOrientation="portrait"
+
+            ></activity>
+        <activity android:name=".Game15"
+            android:screenOrientation="portrait"
+
+            ></activity>
+
+        <activity android:name=".GameOver"
+            android:screenOrientation="portrait"
             ></activity>
     </application>
 
