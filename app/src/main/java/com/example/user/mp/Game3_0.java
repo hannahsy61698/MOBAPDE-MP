@@ -68,6 +68,7 @@ public class Game3_0 extends Activity {
         {
             highscore = 20;
             Intent myIntent = new Intent(views.getContext(), GameOver.class);
+            myIntent.putExtra("score", "20");
             startActivityForResult(myIntent, 0);
         }
     }

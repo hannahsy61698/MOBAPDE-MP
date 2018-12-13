@@ -13,9 +13,13 @@ public class HighScore extends Activity {
         setContentView(R.layout.highscore);
 
         TextView high1 = findViewById(R.id.high1);
+        TextView high2 = findViewById(R.id.high2);
+        TextView high3 = findViewById(R.id.high3);
 
         if(getIntent().getStringExtra("highname") == null) {
                 high1.setText("null");
+                high2.setText("null");
+                high2.setText("null");
         }else{
             String num1 = getIntent().getStringExtra("highname");
             String score1 = getIntent().getStringExtra("score");
