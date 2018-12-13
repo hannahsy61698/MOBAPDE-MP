@@ -32,6 +32,8 @@ public class Game11 extends Activity {
 
         startActivityForResult(myIntent, 0);
     }
+
+
     public void wrong11(View view){
         int minus = Integer.parseInt(lives);
         minus = minus - 1;
