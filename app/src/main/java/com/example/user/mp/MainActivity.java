@@ -1,16 +1,12 @@
 package com.example.user.mp;
 
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteException;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,21 +16,23 @@ public class MainActivity extends AppCompatActivity {
 
     private Button butt;
     private SQLiteDatabaseHandler db;
-    private String stopper;
     private String highscore;
+    private List<Player> players;
+    private int i;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        stopper = "start";
-
-        if(checkDataBase()){
+        highscore = "2";
+        i = 1;
+        if(i == 1){
             db = new SQLiteDatabaseHandler(this);
+            players = db.allPlayers();
+            i = 2;
         }else{
-            highscore = getIntent().getStringExtra("score");
-            add(highscore);
+              highscore = getIntent().getStringExtra("score");
         }
 
         TextView next = findViewById(R.id.txtStart);
@@ -46,6 +44,23 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        TextView score = findViewById(R.id.txthigh);
+        score.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                add(highscore);
+                if(players.isEmpty()) {
+                    Intent myIntent = new Intent(view.getContext(), HighScore.class);
+                    myIntent.putExtra("highname", "beep");
+                    startActivityForResult(myIntent, 0);
+                }else{
+                    String msg = players.get(0).getName();
+                    Intent myIntent = new Intent(view.getContext(), HighScore.class);
+                    myIntent.putExtra("highname", msg);
+                    myIntent.putExtra("score", highscore);
+                    startActivityForResult(myIntent, 0);
+                }
+            }
+        });
 
 // this is to exit the application
         if( getIntent().getBooleanExtra("Exit me", false)){
@@ -55,31 +70,24 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void add(String high){
-        Player player1 = new Player(1, "Lebron James", "F", Integer.parseInt(high));
-
+        int temp = Integer.parseInt(high);
+        Player player1 = new Player(1, "Lebron James", "F", temp);
         db.addPlayer(player1);
-
-        List<Player> players = db.allPlayers();
-
-        if (players != null) {
-            String msg = players.get(0).getName() + players.get(0).getHeight();
-            TextView text = findViewById(R.id.high1);
-            text.setText(msg);
-        }
+        players = db.allPlayers();
     }
 
-    private boolean checkDataBase() {
-        SQLiteDatabase checkDB = null;
-        final String DB_FULL_PATH = "/data/data/com.example.user.mp/databases";
-        try {
-            checkDB = SQLiteDatabase.openDatabase(DB_FULL_PATH, null,
-                    SQLiteDatabase.OPEN_READONLY);
-            checkDB.close();
-        } catch (SQLiteException e) {
-            // database doesn't exist yet.
-        }
-        return checkDB != null;
-    }
+//    private boolean checkDataBase() {
+//        SQLiteDatabase checkDB = null;
+//        final String DB_FULL_PATH = "/data/data/com.example.user.mp/databases";
+//        try {
+//            checkDB = SQLiteDatabase.openDatabase(DB_FULL_PATH, null,
+//                    SQLiteDatabase.OPEN_READONLY);
+//            checkDB.close();
+//        } catch (SQLiteException e) {
+//
+//        }
+//        return checkDB != null;
+//    }
 
     boolean doubleBackToExitPressedOnce = false;
 

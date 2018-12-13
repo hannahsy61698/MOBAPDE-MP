@@ -77,7 +77,10 @@
             android:screenOrientation="portrait"
 
             ></activity>
+        <activity android:name=".HighScore"
+            android:screenOrientation="portrait"
 
+            ></activity>
         <activity android:name=".GameOver"
             android:screenOrientation="portrait"
             ></activity>
