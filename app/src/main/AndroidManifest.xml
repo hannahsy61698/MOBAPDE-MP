@@ -45,8 +45,12 @@
             android:screenOrientation="portrait"
 
             ></activity>
+        <activity android:name=".Game6_theItem"
+            android:screenOrientation="portrait"
+
+            ></activity>
         <activity android:name=".Game7"
-        android:screenOrientation="portrait"
+            android:screenOrientation="portrait"
 
             ></activity>
         <activity android:name=".Game8"

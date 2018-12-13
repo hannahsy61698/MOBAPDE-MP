@@ -27,7 +27,7 @@ public class Game5  extends Activity {
             @Override
             public void onClick(View view) {
                 highscore = 50;
-                Intent myIntent = new Intent(view.getContext(), Game7.class);
+                Intent myIntent = new Intent(view.getContext(), Game6.class);
                 myIntent.putExtra("lives", lives);
                 startActivityForResult(myIntent, 0);
             }
