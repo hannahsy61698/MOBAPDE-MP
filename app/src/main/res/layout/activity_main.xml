@@ -29,14 +29,14 @@
         android:background="@drawable/button2"
         android:fontFamily="@font/action_man_extended_bold"
         android:text="@string/start"
-        app:layout_constraintBottom_toTopOf="@+id/txtSetting"
+        app:layout_constraintBottom_toTopOf="@+id/txthigh"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         tools:textSize="31sp" />
 
     <TextView
-        android:id="@+id/txtSetting"
+        android:id="@+id/txthigh"
         android:layout_width="250dp"
         android:layout_height="69dp"
         android:layout_marginStart="74dp"
