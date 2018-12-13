@@ -16,24 +16,21 @@ public class MainActivity extends AppCompatActivity {
 
     private Button butt;
     private SQLiteDatabaseHandler db;
-    private String highscore;
+    private String highscore = "2";
     private List<Player> players;
-    private int i;
+    private int i = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        highscore = "2";
-        i = 1;
         if(i == 1){
             db = new SQLiteDatabaseHandler(this);
             players = db.allPlayers();
             i = 2;
-        }else{
-              highscore = getIntent().getStringExtra("score");
         }
+
 
         TextView next = findViewById(R.id.txtStart);
         next.setOnClickListener(new View.OnClickListener() {
@@ -70,6 +67,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void add(String high){
+        if(getIntent().getStringExtra("score") == null){
+            highscore = "0";
+        }else {
+            highscore = getIntent().getStringExtra("score");
+        }
         int temp = Integer.parseInt(high);
         Player player1 = new Player(1, "Lebron James", "F", temp);
         db.addPlayer(player1);

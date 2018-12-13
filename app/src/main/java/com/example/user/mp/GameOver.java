@@ -17,10 +17,12 @@ public class GameOver extends Activity {
         setContentView(R.layout.gameover);
 
         butts = findViewById(R.id.button2);
-        score = getIntent().getStringExtra("score");
+
     }
 
     public void restart(View view){
+        score = getIntent().getStringExtra("score");
+
         Intent myIntent = new Intent(view.getContext(), MainActivity.class);
         myIntent.putExtra("score", score);
         startActivityForResult(myIntent, 0);

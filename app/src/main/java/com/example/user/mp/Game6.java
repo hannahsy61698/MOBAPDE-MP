@@ -11,7 +11,7 @@ public class Game6 extends Activity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.game6);
+     //   setContentView(R.layout.game6);
 
         lives = getIntent().getStringExtra("lives");
         life = findViewById(R.id.life_num);

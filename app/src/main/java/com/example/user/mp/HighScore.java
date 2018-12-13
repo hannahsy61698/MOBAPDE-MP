@@ -15,7 +15,7 @@ public class HighScore extends Activity {
         TextView high1 = findViewById(R.id.high1);
 
         if(getIntent().getStringExtra("highname") == null) {
-            high1.setText("null");
+                high1.setText("null");
         }else{
             String num1 = getIntent().getStringExtra("highname");
             String score1 = getIntent().getStringExtra("score");
