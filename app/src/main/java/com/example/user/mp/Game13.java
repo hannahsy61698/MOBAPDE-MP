@@ -18,5 +18,5 @@ public class Game13 extends Activity {
         life = findViewById(R.id.life_num);
         life.setText(lives);
 
-    } 
+    }
 }

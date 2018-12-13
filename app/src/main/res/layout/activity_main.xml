@@ -25,7 +25,7 @@
         android:layout_height="45dp"
         android:layout_marginStart="74dp"
         android:layout_marginEnd="75dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginBottom="44dp"
         android:background="@drawable/button2"
         android:fontFamily="@font/action_man_extended_bold"
         android:text="@string/start"
@@ -38,47 +38,31 @@
     <TextView
         android:id="@+id/txtSetting"
         android:layout_width="250dp"
-        android:layout_height="45dp"
+        android:layout_height="69dp"
         android:layout_marginStart="74dp"
         android:layout_marginEnd="75dp"
-        android:layout_marginBottom="132dp"
+        android:layout_marginBottom="68dp"
         android:background="@drawable/button2"
         android:fontFamily="@font/action_man_extended_bold"
-        android:text="@string/settings"
+        android:text="@string/highscore"
         app:layout_constraintBottom_toTopOf="@+id/textView11"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.75"
         app:layout_constraintStart_toStartOf="parent"
         tools:textSize="31sp" />
 
     <TextView
         android:id="@+id/textView11"
-        android:layout_width="282dp"
+        android:layout_width="248dp"
         android:layout_height="33dp"
         android:layout_marginStart="83dp"
         android:layout_marginEnd="81dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="32dp"
         android:fontFamily="@font/gooddp"
         android:text="@string/credits"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/txtWelcome"
-        android:layout_width="392dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="22dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="41dp"
-        android:text="@string/welcome"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/txtStart"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
 </android.support.constraint.ConstraintLayout>
