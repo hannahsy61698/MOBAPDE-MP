@@ -27,26 +27,26 @@ public class Game6_key extends Activity {
         life = findViewById(R.id.life_num);
         life.setText(lives);
         */
-        ImageView img3 = new ImageView(this);
-        img3.setImageResource(R.drawable.key);
-        img3.setClickable(true);
-        img3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                int minus = Integer.parseInt(lives);
-                minus = minus - 1;
-                if(minus != 0) {
-                    lives = Integer.toString(minus);
-                    life.setText(lives);
-                }else
-                {
-                    highscore = 50;
-                    Intent myIntent = new Intent(view.getContext(), GameOver.class);
-                    myIntent.putExtra("score", "120");
-                    startActivityForResult(myIntent, 0);
-                }
-            }
-        });
+//        ImageView img3 = new ImageView(this);
+//        img3.setImageResource(R.drawable.key);
+//        img3.setClickable(true);
+//        img3.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                int minus = Integer.parseInt(lives);
+//                minus = minus - 1;
+//                if(minus != 0) {
+//                    lives = Integer.toString(minus);
+//                    life.setText(lives);
+//                }else
+//                {
+//                    highscore = 50;
+//                    Intent myIntent = new Intent(view.getContext(), GameOver.class);
+//                    myIntent.putExtra("score", "120");
+//                    startActivityForResult(myIntent, 0);
+//                }
+//            }
+//        });
 
 
     }

@@ -27,7 +27,7 @@ public class Game15 extends Activity
     }
         public void endGame (View view){
 
-        Intent myIntent = new Intent(view.getContext(), Game14.class);
+        Intent myIntent = new Intent(view.getContext(), GameWin.class);
 
         myIntent.putExtra("lives", lives);
 
